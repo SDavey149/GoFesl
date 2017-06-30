@@ -484,7 +484,7 @@ func (fM *FeslManager) NuGetAccount(event gs.EventClientTLSCommand) {
 	loginPacket["heroName"] = event.Client.RedisState.Get("username")
 	loginPacket["nuid"] = event.Client.RedisState.Get("email")
 	loginPacket["DOBDay"] = "1"
-	loginPacket["DOBMonthg"] = "1"
+	loginPacket["DOBMonth"] = "1"
 	loginPacket["DOBYear"] = "2017"
 	loginPacket["userId"] = event.Client.RedisState.Get("uID")
 	loginPacket["globalOptin"] = "0"
